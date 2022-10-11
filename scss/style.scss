@@ -1,0 +1,32 @@
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, gold, skyblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1 {
+  text-transform: uppercase;
+  background: url(https://images.unsplash.com/photo-1514810771018-276192729582?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: blue;
+  font-size: 5em;
+  letter-spacing: 5px;
+  animation: bg 5s infinite linear;
+}
+
+@keyframes bg {
+  from {
+    background-position: 50% 100%;
+  }
+
+  to {
+    background-position: 50% 0%;
+  }
+}
